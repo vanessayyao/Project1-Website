@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hobbies.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>My Hobbies</h1>
+    <div class="grid-container">
+        <div class="grid-item" id="tv">
+            <h3>Watching TV</h3>
+            <h5> My favorite TV show is probably "Survivor," where 18 people are stranded on an
+            island. They have to create shelter/fire, complete challenges, and most
+            importantly, strategize with each other to vote people out! The last one
+            remaining is the winner :&rpar; </h5>
+            <img src="tribal council.jpg" id="tc">
+        </div>
+        <div class="grid-item" id="drawing">
+            <h3>Drawing/Crafting</h3>
+            <h5> I mostly only do this sporadically and when I need to destress, but I like
+            the creative freedom of doodling whatever I want. Here's a sketch of a climber 
+            I did recently: </h5>
+            <img src="climbing.png" id="climb">
+        </div>
+        <div class="grid-item" id="pingpong">
+            <h3>Ping Pong</h3>
+            <h5>I first picked this up during the pandemic because we had a tiny kids' table 
+                at home. I usually play with my twin sister, but since college started,
+                I've been going to MLK sometimes to play with people there :D
+                <br> Fun fact: I prefer forehand over backhand!
+            </h5>
+            <img src="pingpong.jpeg" id="pp">
+        </div>
+        <div class="grid-item">
+            <h3 id="enter">I want to hear about your hobbies too! Check the ones you have: </h3>
+            <form id="form">
+                <input type="checkbox" id="hobby1">
+                <label for="hobby1"> Playing a sport</label><br>
+                <input type="checkbox" id="hobby2">
+                <label for="hobby2"> Playing an instrument</label><br>
+                <input type="checkbox" id="hobby3">
+                <label for="hobby3"> Reading</label>
+            </form>
+            <input type="text" placeholder="Manually enter one too!" id="hobby">
+            <button id="submit" onclick="submit()">Submit</button>
+            <div id="yours"></div>
+        </div>
+    </div>
+    <button id="home-btn" onclick="home()">Home</button>
+    <!--<a href="index.html">
+        <button id="home">Home</button>
+    </a>-->
+</body>
+</html>
